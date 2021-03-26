@@ -4,6 +4,7 @@ import "./styles/MySearchBar.css";
 class MySearchBar extends React.Component {
   state = { term: "" };
   onFormSubmit(event, term) {
+    let x = 1;
     event.preventDefault();
     if (term) {
       this.props.onSubmit(term);
